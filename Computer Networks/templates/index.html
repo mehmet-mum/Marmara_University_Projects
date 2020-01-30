@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Travel Agency</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}" type="text/css">
+</head>
+
+<body>
+    <div id="main_div">
+        <form method="POST">
+            <h1>Welcome to our travel agecny</h1>
+            <h3>{{ confirmed }}</h3>
+            <div id="info_div">
+                <div id="info_p_div">
+                    <p class="departure">departure</p>
+                    <p class="arrival">arrival</p>
+                    <p class="passenger">passengers</p>
+                </div>
+    
+                <div id="info_input_div">
+                    <input class="d_date" name='ddate' id='ddate' type="date" placeholder="28/06/2019" required/>    
+                    <input class="a_date" name='adate' id='adate' type="date" placeholder="28/07/2019" required/>
+                    <input class="amount" name='amount' id='amount' type='number' value="1"min="1"/>
+
+                </div>
+    
+            </div>
+                
+            
+            <div id="travel_div">
+                <div class=hotel_div>
+                    <p>hotel</p>
+                    <select name='hotel'>
+                        <option value="hotel1">hotel1</option>
+                        <option value="hotel2">hotel2</option>
+                    </select>
+                </div>
+    
+                <div>
+                    <p>airline</p>
+                    <select name='airline'>
+                        <option value="airline1">airline1</option>
+                        <option value="airline2">airline2</option>
+                    </select>
+                </div>
+            </div>
+            
+            <input class="search_button" type="submit" value="search">
+        </form>
+    </div>
+</body>
+
+</html>

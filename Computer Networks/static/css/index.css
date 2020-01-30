@@ -1,0 +1,148 @@
+
+body{
+    height: 100%;
+    background: url('../img/background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #4c9900;
+}
+
+
+#main_div{
+    text-align: center;
+}
+#main_div h1{
+    opacity: 0.9;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 40px;
+    text-transform: uppercase;
+    border: 3px solid;
+    border-color: #3333ff;
+    color: #3333ff;
+    background-color: rgba(250, 250, 250, 0.4);
+}
+
+#main_div h3{
+    color:white;
+    background-color: rgba(51, 51, 255, 0.4);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#main_div h1:hover{
+    border-color: white;
+    color: white;
+    background-color: rgba(51, 51, 240, 0.4);
+}
+
+#info_div{
+    background-color: rgba(250, 250, 250, 0.85);
+    border: 2px solid;
+    border-color: #3333ff;
+    width: 50%;
+    margin: 15% auto 0;
+    padding: 15px;
+}
+
+#info_p_div{
+    text-align: left;
+}
+
+#info_p_div p{
+    display: inline-block;
+    margin: 0 0 5px 0;
+    color: #3333ff;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+#info_input_div input{
+    margin: 0 0 5px 0;
+    width: 150px;
+    font-size: 18px;
+    color: #3333ff;
+    font-weight: bold;
+}
+
+#info_input_div input.d_date{
+    margin-left: 0px;
+}
+
+#info_input_div input.a_date{
+    margin-left: 40px;
+}
+
+#info_input_div input.amount{
+    margin-left: 40px;
+}
+
+#info_p_div p.departure{
+    margin-left: 40px;
+}
+
+#info_p_div p.arrival{
+    margin-left: 110px;
+}
+
+#info_p_div p.passenger{
+    margin-left: 135px;
+}
+
+#travel_div{
+    background-color: rgba(250, 250, 250, 0.85);
+    border: 2px solid;
+    border-color: #3333ff;
+    width: 50%;
+    margin: 2% auto 0;
+    padding: 5px 15px;
+    text-align: center;
+}
+
+#travel_div div{
+    display: inline-block;
+    margin: 0;
+}
+
+#travel_div p{
+    display: inline-block;
+    font-size: 18px;
+    color: #3333ff;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+#travel_div select{
+    margin-left: 10px;
+    font-size: 18px;
+    color: #3333ff;
+    font-weight: bold;
+}
+
+#travel_div div.hotel_div{
+    margin-right: 50px;
+}
+
+#main_div input.search_button{
+    text-align: center;
+    padding: 15px 30px;
+    margin: 30px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid;
+    border-color: 3333ff;
+    border-radius: 7px;
+    color: #3333ff;
+    background-color: rgba(250, 250, 250, 0.85);
+}
+
+#main_div input.search_button:hover{
+    color: white;
+    background-color: rgba(51, 51, 240, 0.85);
+}
+
+
