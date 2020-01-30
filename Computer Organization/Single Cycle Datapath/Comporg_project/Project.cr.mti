@@ -1,0 +1,85 @@
+C:/Users/Mehmet/Desktop/Comporg_project/shift_26.v {1 {vlog -work work -stats=none C:/Users/Mehmet/Desktop/Comporg_project/shift_26.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module shift_26
+
+Top level modules:
+	shift_26
+
+} {} {}} C:/Users/Mehmet/Desktop/Comporg_project/shift.v {1 {vlog -work work -stats=none C:/Users/Mehmet/Desktop/Comporg_project/shift.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module shift
+
+Top level modules:
+	shift
+
+} {} {}} C:/Users/Mehmet/Desktop/Comporg_project/alucont.v {1 {vlog -work work -stats=none C:/Users/Mehmet/Desktop/Comporg_project/alucont.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module alucont
+
+Top level modules:
+	alucont
+
+} {} {}} C:/Users/Mehmet/Desktop/Comporg_project/alu32.v {1 {vlog -work work -stats=none C:/Users/Mehmet/Desktop/Comporg_project/alu32.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module alu32
+
+Top level modules:
+	alu32
+
+} {} {}} C:/Users/Mehmet/Desktop/Comporg_project/control.v {1 {vlog -work work -stats=none C:/Users/Mehmet/Desktop/Comporg_project/control.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module control
+
+Top level modules:
+	control
+
+} {} {}} C:/Users/Mehmet/Desktop/Comporg_project/mult2_to_1_32.v {1 {vlog -work work -stats=none C:/Users/Mehmet/Desktop/Comporg_project/mult2_to_1_32.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module mult2_to_1_32
+
+Top level modules:
+	mult2_to_1_32
+
+} {} {}} C:/Users/Mehmet/Desktop/Comporg_project/mult2_to_1_1.v {1 {vlog -work work -stats=none C:/Users/Mehmet/Desktop/Comporg_project/mult2_to_1_1.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module mult2_to_1_1
+
+Top level modules:
+	mult2_to_1_1
+
+} {} {}} C:/Users/Mehmet/Desktop/Comporg_project/mult2_to_1_2.v {1 {vlog -work work -stats=none C:/Users/Mehmet/Desktop/Comporg_project/mult2_to_1_2.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module mult2_to_1_2
+
+Top level modules:
+	mult2_to_1_2
+
+} {} {}} C:/Users/Mehmet/Desktop/Comporg_project/processor.v {1 {vlog -work work -stats=none C:/Users/Mehmet/Desktop/Comporg_project/processor.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module processor
+
+Top level modules:
+	processor
+
+} {} {}} C:/Users/Mehmet/Desktop/Comporg_project/adder.v {1 {vlog -work work -stats=none C:/Users/Mehmet/Desktop/Comporg_project/adder.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module adder
+
+Top level modules:
+	adder
+
+} {} {}} C:/Users/Mehmet/Desktop/Comporg_project/mult2_to_1_5.v {1 {vlog -work work -stats=none C:/Users/Mehmet/Desktop/Comporg_project/mult2_to_1_5.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module mult2_to_1_5
+
+Top level modules:
+	mult2_to_1_5
+
+} {} {}} C:/Users/Mehmet/Desktop/Comporg_project/signext.v {1 {vlog -work work -stats=none C:/Users/Mehmet/Desktop/Comporg_project/signext.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module signext
+
+Top level modules:
+	signext
+
+} {} {}}

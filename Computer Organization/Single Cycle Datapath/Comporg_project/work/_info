@@ -1,0 +1,262 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Modeltech_pe_edu_10.4a/examples
+vadder
+Z0 !s110 1558811990
+!i10b 1
+!s100 Y;`Fz?LjC0QzPeNWf8_U<1
+ITRE]5]3ndNGO@6cfL6>oI2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/Mehmet/Desktop/Comporg_project
+w955028208
+8C:/Users/Mehmet/Desktop/Comporg_project/adder.v
+FC:/Users/Mehmet/Desktop/Comporg_project/adder.v
+L0 1
+Z3 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z4 !s108 1558811990.000000
+!s107 C:/Users/Mehmet/Desktop/Comporg_project/adder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Mehmet/Desktop/Comporg_project/adder.v|
+!s101 -O0
+!i113 1
+Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+valu32
+R0
+!i10b 1
+!s100 _?H=o`=kQAmBC8@C]WLfF0
+IW@4KUFOKFhV=4kQ`n9@ME2
+R1
+R2
+w1558345767
+8C:/Users/Mehmet/Desktop/Comporg_project/alu32.v
+FC:/Users/Mehmet/Desktop/Comporg_project/alu32.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Mehmet/Desktop/Comporg_project/alu32.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Mehmet/Desktop/Comporg_project/alu32.v|
+!s101 -O0
+!i113 1
+R5
+valucont
+R0
+!i10b 1
+!s100 ToU^mzGjCl2LHR^;DT`M03
+IVDi59Gch^ZYK`=b:A7>OJ1
+R1
+R2
+w1558782914
+8C:/Users/Mehmet/Desktop/Comporg_project/alucont.v
+FC:/Users/Mehmet/Desktop/Comporg_project/alucont.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Mehmet/Desktop/Comporg_project/alucont.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Mehmet/Desktop/Comporg_project/alucont.v|
+!s101 -O0
+!i113 1
+R5
+vcontrol
+R0
+!i10b 1
+!s100 >Af`MfaYkVEEf7W3G_<f`2
+I9528cjzcJJM[9T3<o6mOd0
+R1
+R2
+w1558703639
+8C:/Users/Mehmet/Desktop/Comporg_project/control.v
+FC:/Users/Mehmet/Desktop/Comporg_project/control.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Mehmet/Desktop/Comporg_project/control.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Mehmet/Desktop/Comporg_project/control.v|
+!s101 -O0
+!i113 1
+R5
+vmult2_to_1_1
+!s110 1558811988
+!i10b 1
+!s100 6=AoPd`XR50ckNUnLKTkL3
+I6oXPg7P?ZMn1fP98YVOzR2
+R1
+R2
+w1558178004
+8C:/Users/Mehmet/Desktop/Comporg_project/mult2_to_1_1.v
+FC:/Users/Mehmet/Desktop/Comporg_project/mult2_to_1_1.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z6 !s108 1558811988.000000
+!s107 C:/Users/Mehmet/Desktop/Comporg_project/mult2_to_1_1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Mehmet/Desktop/Comporg_project/mult2_to_1_1.v|
+!s101 -O0
+!i113 1
+R5
+vmult2_to_1_2
+Z7 !s110 1558811989
+!i10b 1
+!s100 e@XTdJo0hom7f_GnHY`l73
+IH=heYncb2>a<HkPLMcaYP1
+R1
+R2
+w1558274423
+8C:/Users/Mehmet/Desktop/Comporg_project/mult2_to_1_2.v
+FC:/Users/Mehmet/Desktop/Comporg_project/mult2_to_1_2.v
+L0 1
+R3
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Mehmet/Desktop/Comporg_project/mult2_to_1_2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Mehmet/Desktop/Comporg_project/mult2_to_1_2.v|
+!s101 -O0
+!i113 1
+R5
+vmult2_to_1_32
+R7
+!i10b 1
+!s100 ^aXF>kbOQm5iDYT=bV7M11
+Ic`c8]:Dl@A3I^L`;]zKbh2
+R1
+R2
+w1021135086
+8C:/Users/Mehmet/Desktop/Comporg_project/mult2_to_1_32.v
+FC:/Users/Mehmet/Desktop/Comporg_project/mult2_to_1_32.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z8 !s108 1558811989.000000
+!s107 C:/Users/Mehmet/Desktop/Comporg_project/mult2_to_1_32.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Mehmet/Desktop/Comporg_project/mult2_to_1_32.v|
+!s101 -O0
+!i113 1
+R5
+vmult2_to_1_5
+R7
+!i10b 1
+!s100 k]2`0V2=b67f6kc:ca8eK0
+IPVn:L<f]2HeYN;RHG>XCf2
+R1
+R2
+w955028066
+8C:/Users/Mehmet/Desktop/Comporg_project/mult2_to_1_5.v
+FC:/Users/Mehmet/Desktop/Comporg_project/mult2_to_1_5.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/Mehmet/Desktop/Comporg_project/mult2_to_1_5.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Mehmet/Desktop/Comporg_project/mult2_to_1_5.v|
+!s101 -O0
+!i113 1
+R5
+vprocessor
+R7
+!i10b 1
+!s100 oJS0l@=f@hE9Xn<iE97V>3
+I9]__Ufd5U[=9ce1_YaI7g3
+R1
+R2
+w1558731749
+8C:/Users/Mehmet/Desktop/Comporg_project/processor.v
+FC:/Users/Mehmet/Desktop/Comporg_project/processor.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/Mehmet/Desktop/Comporg_project/processor.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Mehmet/Desktop/Comporg_project/processor.v|
+!s101 -O0
+!i113 1
+R5
+vshift
+R7
+!i10b 1
+!s100 GWP55OEfIRVA_6M>iSY8d2
+Ia9hW]j:Ej7GTNgL8ScYTS1
+R1
+R2
+w955028064
+8C:/Users/Mehmet/Desktop/Comporg_project/shift.v
+FC:/Users/Mehmet/Desktop/Comporg_project/shift.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/Mehmet/Desktop/Comporg_project/shift.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Mehmet/Desktop/Comporg_project/shift.v|
+!s101 -O0
+!i113 1
+R5
+vshift_26
+R7
+!i10b 1
+!s100 B2[AbBI2g[@:m=Dh``^<]1
+I6>VEXLKAHb<eU6B=f0j]90
+R1
+R2
+w1558535314
+8C:/Users/Mehmet/Desktop/Comporg_project/shift_26.v
+FC:/Users/Mehmet/Desktop/Comporg_project/shift_26.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/Mehmet/Desktop/Comporg_project/shift_26.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Mehmet/Desktop/Comporg_project/shift_26.v|
+!s101 -O0
+!i113 1
+R5
+vsignext
+R7
+!i10b 1
+!s100 JAEfRFLIAaX=@V<j@h[jS1
+I8E:V7`1W[zUdeibHd[nIW0
+R1
+R2
+w1335991790
+8C:/Users/Mehmet/Desktop/Comporg_project/signext.v
+FC:/Users/Mehmet/Desktop/Comporg_project/signext.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/Mehmet/Desktop/Comporg_project/signext.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Mehmet/Desktop/Comporg_project/signext.v|
+!s101 -O0
+!i113 1
+R5
