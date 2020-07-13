@@ -1,0 +1,151 @@
+.active{
+  display: block;
+}
+
+.passive{
+  display: none;
+}
+
+#user_inputs{
+  text-align: center;
+  padding: 5% 0;
+}
+
+#user_inputs div{
+  width: 25%;
+  margin: 0 auto;
+  border: 0.4% black;
+  border-style: none none solid none;
+}
+
+#user_inputs p{
+  text-align: start;
+  width: 70%;
+  display: inline-block;
+  margin: 10% 0;
+  padding: 0;
+}
+
+#user_inputs select{
+  width:  29%;
+  margin: 0;
+}
+
+#user_inputs input{
+  margin: 4% 0;
+  font-size: x-large;
+}
+
+
+
+#cuckoo_hashing.active{
+  display: block;
+  text-align: center;
+}
+
+#hash_operations{
+  margin-bottom: 2%;
+}
+
+#hash_operations div p{
+  display: inline-block;
+  font-size: x-large;
+  margin-right: 1%;
+}
+
+#hash_operations input.button{
+  font-size: large;
+}
+
+#hash_operations h1{
+  font-weight: bold;
+  color: blue;
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin: 1% 0;
+  padding: 0;
+}
+
+#message{
+  margin: 1% 0;
+}
+h2.green{
+  color: green;
+}
+
+h2.red{
+  color: red;
+}
+
+#insert{
+  margin-right: 1.8%;
+}
+#delete{
+  margin-right: 1.8%;
+}
+
+#tables{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+#tables div.active{
+  text-align: center;
+  width: 15%;
+  margin-right: 2%;
+}
+
+#tables div h3{
+  border: 1px black;
+  border-style: none none solid none;
+  padding-bottom: 10%;
+}
+
+#tables div h4{
+  color: darkmagenta;
+  text-decoration: underline;
+}
+
+#tables div p{
+  height: 2vh;
+  border: 1px black;
+  border-style: none none solid none;
+  padding: 4% 0;
+}
+
+#tables div p.green{
+  background: greenyellow;
+}
+
+#tables div.index{
+  text-align: center;
+  width: 9%;
+  margin-right: 4%;
+}
+
+
+#tables div.index h3{
+  padding-bottom: 15%;
+}
+#tables div.index p{
+  padding: 6.65% 0;
+}
+
+#log h2{
+  color: forestgreen;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+
+#log p{
+  font-size: larger;
+  margin-left: 10%;
+  text-align: start;
+  color: darkslateblue;
+}
+
+#log span{
+  font-size: larger; 
+  color: darkorange;
+}
