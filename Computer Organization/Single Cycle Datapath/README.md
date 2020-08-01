@@ -1,4 +1,4 @@
-Improve Single Cycle Datapath with new 6 instructions
+## Improve Single Cycle Datapath with new 6 instructions
 
 - srlv
 - jalm
@@ -7,4 +7,4 @@ Improve Single Cycle Datapath with new 6 instructions
 - bz
 - balrn
 
-Implemented with verilog 
+##### Implemented with verilog 
