@@ -1,4 +1,4 @@
-Binary Search Tree project
+## Binary Search Tree project
 
 - User enters a input file which contains n x 2 numbers in it seperated by comma.
 - BST comparison criteria is that for even number depths compare with first number and for odd number depths compare with second number.
@@ -9,4 +9,4 @@ Binary Search Tree project
   4-Print BST
 
 
-Implemented with C programming language
+##### Implemented with C programming language
