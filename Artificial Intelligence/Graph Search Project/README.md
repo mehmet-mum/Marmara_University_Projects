@@ -1,4 +1,4 @@
-Graph Search Algorithms
+## Graph Search Algorithms
 
   - User gives a maze which contains starting, trap and goal points.
   - Program finds shortest path from starting point to any goal point using following algorithms;
@@ -9,4 +9,4 @@ Graph Search Algorithms
     - Greedy Best First Search
     - A* Heuristic Search
     
-Implemented with Python programming language
+#### Implemented with Python programming language
