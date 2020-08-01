@@ -1,4 +1,4 @@
-A file sharing system among users with socket programming via encrypted way.
+## A file sharing system among users with socket programming via encrypted way.
 
   - The system consist of clients and a server.
   - The server is multithreaded so, many clients can connect the server simultaneously.
@@ -9,4 +9,4 @@ A file sharing system among users with socket programming via encrypted way.
   - RSA used for key exchange mechanism.
   - Certification and Digital signature used for authentication and message integrity.
   
-Implemented with Java programming language
+##### Implemented with Java programming language
