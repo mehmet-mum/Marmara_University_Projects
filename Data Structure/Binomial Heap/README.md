@@ -1,3 +1,3 @@
-Priority Queue project 
+## Priority Queue project 
 
-Implemented with C programming language
+##### Implemented with C programming language
