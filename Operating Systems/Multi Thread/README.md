@@ -1,4 +1,4 @@
-Multithreaded matrix calculation using Pthread library
+## Multithreaded matrix calculation using Pthread library
 
   - The program consist of 5 type of threads, main thread, generate thread, log thread, mod thread and add thread.
   - Main thread manages rest ıf the threads.
@@ -10,4 +10,4 @@ Multithreaded matrix calculation using Pthread library
   - User gives size of the matrix (multiple of 5).
   - User gives number of each type of thread except main thread.
   
-Implemented with C programming language
+##### Implemented with C programming language
