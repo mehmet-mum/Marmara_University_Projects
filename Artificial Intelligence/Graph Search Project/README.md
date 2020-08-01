@@ -9,4 +9,4 @@
     - Greedy Best First Search
     - A* Heuristic Search
     
-#### Implemented with Python programming language
+##### Implemented with Python programming language
