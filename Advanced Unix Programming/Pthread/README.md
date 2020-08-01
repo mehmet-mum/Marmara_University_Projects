@@ -4,4 +4,4 @@
   - Program simulates shoppings by given number of days.
 
 
-#### Implemented with C programming language
+##### Implemented with C programming language
