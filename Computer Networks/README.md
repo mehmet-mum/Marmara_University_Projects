@@ -5,6 +5,6 @@
   - Client communicates server with TCP connection.
   - Server communicates hotels and airlines with HTTP connections.
 
-#### Implemented with Python programming language and used sqlite database
+##### Implemented with Python programming language and used sqlite database
 
 
