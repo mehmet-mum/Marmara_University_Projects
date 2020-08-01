@@ -1,3 +1,3 @@
-Text mining project
+## Text mining project
 
-Implemented with Python programming language
+###### Implemented with Python programming language
