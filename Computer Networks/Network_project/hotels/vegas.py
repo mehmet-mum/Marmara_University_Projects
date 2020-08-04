@@ -3,9 +3,8 @@ from sqlite3 import Error
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from datetime import datetime, timedelta
 
-
 HOST = '127.0.0.1'
-PORT = 8090
+PORT = 8080
 
 MAX_NUM = 60
 
@@ -19,14 +18,8 @@ def create_connection(db_file):
         print(e)
     return conn
 
-database = "./hotel1.db"
+database = "./vegas.db"
 conn = create_connection(database)
-
-departure_status = ''
-arrival_status = ''
-
-arrival_number = 0
-departure_number = 0
 
 #create table if necessary
 def create_table(conn, create_table_sql):
@@ -91,7 +84,7 @@ def insert_rezervation(cur, departure, arrival, number):
         
         departure_date = departure_date + timedelta(days = 1)
 
-# get message handler      
+# get message handler        
 class HTTPRequestHandler(BaseHTTPRequestHandler):  
     def do_GET(self):
         data = self.path.split('&')
@@ -105,25 +98,20 @@ class HTTPRequestHandler(BaseHTTPRequestHandler):
             departure = data[2]
             arrival = data[3]
 
-            
-
             #   send code 200 response  
             self.send_response(200)  
 
             #send header first  
             self.send_header('Content-type','get-response')  
             self.end_headers() 
-
     
             # get available seats for arrival date from database
             availability = get_availabilty(cur, departure, arrival, number)
-
             
             if availability:
                 self.wfile.write("OK".encode())
             else:
                 self.wfile.write("NOT_OK".encode())
-
 
         elif message_type == 'update_database':
             
@@ -135,6 +123,7 @@ class HTTPRequestHandler(BaseHTTPRequestHandler):
             for row in rows:
                 print (row)
         
+
 
 
 def run():  

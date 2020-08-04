@@ -5,11 +5,11 @@ import socket
 HOST = '127.0.0.1'  # Standard loopback interface address (localhost)
 PORT = 65430      # Port to listen on (non-privileged ports are > 1023)
 
-HOTEL1_PORT = 8090
-HOTEL2_PORT = 8080
+PORTOBELLO_PORT = 8090
+VEGAS_PORT = 8080
 
-AIRLINE2_PORT = 8060
-AIRLINE1_PORT = 8070
+PEGASUS_PORT = 8060
+THY_PORT = 8070
 # open TCP socket and wait
 def run():
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
@@ -37,21 +37,21 @@ def listen(s):
 
 # this part is for second suggestion
 def get_another_hotel(departure_date, arrival_date, number_of_passenger, hotel_name, airline_name):
-    if hotel_name == 'hotel2':
-        http_conn_hotel = http.client.HTTPConnection(HOST, HOTEL2_PORT)
+    if hotel_name == 'vegas':
+        http_conn_hotel = http.client.HTTPConnection(HOST, VEGAS_PORT)
         http_conn_hotel.request('GET', 'get_info&' + number_of_passenger + '&' + 
             departure_date + '&' + arrival_date)
     else:
-        http_conn_hotel = http.client.HTTPConnection(HOST, HOTEL1_PORT)
+        http_conn_hotel = http.client.HTTPConnection(HOST, PORTOBELLO_PORT)
         http_conn_hotel.request('GET', 'get_info&' + number_of_passenger + '&' + 
             departure_date + '&' + arrival_date)
                     
-    if airline_name == 'airline1':
-        http_conn_airline = http.client.HTTPConnection(HOST, AIRLINE1_PORT)
+    if airline_name == 'thy':
+        http_conn_airline = http.client.HTTPConnection(HOST, THY_PORT)
         http_conn_airline.request('GET', 'get_info&' + number_of_passenger + '&' + 
             departure_date + '&' + arrival_date + '&' + hotel_name)
     else:
-        http_conn_airline = http.client.HTTPConnection(HOST, AIRLINE2_PORT)
+        http_conn_airline = http.client.HTTPConnection(HOST, PEGASUS_PORT)
         http_conn_airline.request('GET', 'get_info&' + number_of_passenger + '&' + 
             departure_date + '&' + arrival_date + '&' + hotel_name)
 
@@ -83,21 +83,21 @@ def handleConnection(conn, addr):
 
 
                 #create HTTP connections
-                if hotel_name == 'hotel2':
-                    http_conn_hotel = http.client.HTTPConnection(HOST, HOTEL2_PORT)
+                if hotel_name == 'vegas':
+                    http_conn_hotel = http.client.HTTPConnection(HOST, VEGAS_PORT)
                     http_conn_hotel.request('GET', 'get_info&' + number_of_passenger + '&' + 
                         departure_date + '&' + arrival_date)
                 else:
-                    http_conn_hotel = http.client.HTTPConnection(HOST, HOTEL1_PORT)
+                    http_conn_hotel = http.client.HTTPConnection(HOST, PORTOBELLO_PORT)
                     http_conn_hotel.request('GET', 'get_info&' + number_of_passenger + '&' + 
                         departure_date + '&' + arrival_date)
                     
-                if airline_name == 'airline1':
-                    http_conn_airline = http.client.HTTPConnection(HOST, AIRLINE1_PORT)
+                if airline_name == 'thy':
+                    http_conn_airline = http.client.HTTPConnection(HOST, THY_PORT)
                     http_conn_airline.request('GET', 'get_info&' + number_of_passenger + '&' + 
                         departure_date + '&' + arrival_date + '&' + hotel_name)
                 else:
-                    http_conn_airline = http.client.HTTPConnection(HOST, AIRLINE2_PORT)
+                    http_conn_airline = http.client.HTTPConnection(HOST, PEGASUS_PORT)
                     http_conn_airline.request('GET', 'get_info&' + number_of_passenger + '&' + 
                         departure_date + '&' + arrival_date + '&' + hotel_name)
 
@@ -120,16 +120,16 @@ def handleConnection(conn, addr):
                     situation = 'NOT_OK'
                     #first suggestion
                     if hotel_respond == 'OK' and airline_respond == 'NOT_OK':
-                        if airline_name == 'airline1':
-                            http_conn_airline = http.client.HTTPConnection(HOST, AIRLINE2_PORT)
+                        if airline_name == 'thy':
+                            http_conn_airline = http.client.HTTPConnection(HOST, PEGASUS_PORT)
                             http_conn_airline.request('GET', 'get_info&' + number_of_passenger + '&' + 
                                 departure_date + '&' + arrival_date + '&' + hotel_name)
-                            rez_respond = 'AIRLINE1 is not available, you may use AIRLINE2'
+                            rez_respond = 'THY is not available, you may use PEGASUS'
                         else:
-                            http_conn_airline = http.client.HTTPConnection(HOST, AIRLINE1_PORT)
+                            http_conn_airline = http.client.HTTPConnection(HOST, THY_PORT)
                             http_conn_airline.request('GET', 'get_info&' + number_of_passenger + '&' + 
                                 departure_date + '&' + arrival_date + '&' + hotel_name)
-                            rez_respond = 'AIRLINE2_PORT is not available, you mat use AIRLINE1'
+                            rez_respond = 'PEGASUS is not available, you mat use THY'
 
                         situation = http_conn_airline.getresponse().read().decode()
                         http_conn_airline.close()
@@ -138,24 +138,24 @@ def handleConnection(conn, addr):
 
                     #second suggestion 
                     if situation == 'NOT_OK':
-                        if( hotel_name == 'hotel1'):
-                            hotel_respond, airline_respond = get_another_hotel(departure_date, arrival_date, number_of_passenger, 'hotel2', 'airline1')
+                        if( hotel_name == 'portobello'):
+                            hotel_respond, airline_respond = get_another_hotel(departure_date, arrival_date, number_of_passenger, 'vegas', 'thy')
 
                             if hotel_respond == 'OK' and airline_respond == 'NOT_OK':
-                                hotel_respond, airline_respond = get_another_hotel(departure_date, arrival_date, number_of_passenger, 'hotel2', 'airline2')
+                                hotel_respond, airline_respond = get_another_hotel(departure_date, arrival_date, number_of_passenger, 'vegas', 'pegasus')
                                 if hotel_respond == 'OK' and airline_respond == 'OK':
-                                    send_back_response(conn, addr, 'Given hotel is not available, You may use hotel2 and airline2')
+                                    send_back_response(conn, addr, 'Given hotel is not available, You may use vegas and pegasus')
                             elif hotel_respond == 'OK' and airline_respond == 'OK':
-                                send_back_response(conn, addr, 'Given hotel is not available, You may use hotel2 and airline1')
-                        elif( hotel_name == 'hotel2'):
-                            hotel_respond, airline_respond = get_another_hotel(departure_date, arrival_date, number_of_passenger, 'hotel1', 'airline1')
+                                send_back_response(conn, addr, 'Given hotel is not available, You may use vegas and thy')
+                        elif( hotel_name == 'vegas'):
+                            hotel_respond, airline_respond = get_another_hotel(departure_date, arrival_date, number_of_passenger, 'portobello', 'thy')
 
                             if hotel_respond == 'OK' and airline_respond == 'NOT_OK':
-                                hotel_respond, airline_respond = get_another_hotel(departure_date, arrival_date, number_of_passenger, 'hotel1', 'airline2')
+                                hotel_respond, airline_respond = get_another_hotel(departure_date, arrival_date, number_of_passenger, 'portobello', 'pegasus')
                                 if hotel_respond == 'OK' and airline_respond == 'OK':
-                                    send_back_response(conn, addr, 'Given hotel is not available, You may use hotel1 and airline2')
+                                    send_back_response(conn, addr, 'Given hotel is not available, You may use portobello and pegasus')
                             elif hotel_respond == 'OK' and airline_respond == 'OK':
-                                send_back_response(conn, addr, 'Given hotel is not available, You may use hotel1 and airline1')
+                                send_back_response(conn, addr, 'Given hotel is not available, You may use portobello and thy')
                 
                 send_back_response(conn, addr, 'Given date is not available, please choose another date')
 

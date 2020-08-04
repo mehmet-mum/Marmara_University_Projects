@@ -4,7 +4,7 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 
 
 HOST = '127.0.0.1'
-PORT = 8070
+PORT = 8060
 
 MAX_NUM = 25
 
@@ -18,7 +18,7 @@ def create_connection(db_file):
         print(e)
     return conn
 
-database = "./airline1.db"
+database = "./pegasus.db"
 conn = create_connection(database)
 
 departure_status = ''
